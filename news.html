@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | Makhado FM 107.3</title>
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.jpg" alt="Makhado FM Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#schedule">Schedule</a></li>
+                    <li><a href="news.html" class="active" style="color: var(--primary);">News</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h1 style="color: var(--primary); font-size: 3rem;">Station News</h1>
+                    <p>The latest updates from Makhado FM and our community.</p>
+                </div>
+
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="assets/news1.png" alt="News" class="news-img">
+                        <div class="news-content">
+                            <span class="date">April 23, 2026</span>
+                            <h3>New Community Outreach Program Launched</h3>
+                            <p>Makhado FM is proud to announce a new partnership with local schools to bring radio skills to the youth of Limpopo...</p>
+                            <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="assets/hero-bg.png" alt="News" class="news-img">
+                        <div class="news-content">
+                            <span class="date">April 20, 2026</span>
+                            <h3>Top 10 Local Hits of the Week</h3>
+                            <p>Our listeners have spoken! Here are the tracks that dominated the airwaves this week in the Vhembe district...</p>
+                            <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="assets/gallery1.png" alt="News" class="news-img">
+                        <div class="news-content">
+                            <span class="date">April 15, 2026</span>
+                            <h3>Upcoming Live Broadcast: Makhado Expo</h3>
+                            <p>Join us live from the Makhado Expo this weekend for interviews, prizes, and the best music...</p>
+                            <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="assets/logo.jpg" alt="Makhado FM" style="height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+                    <p>Your #1 community radio station in Limpopo. Connecting people, building futures.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="margin-top: 1rem; opacity: 0.8;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Makhado FM 107.3. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Player -->
+    <div class="sticky-player">
+        <div class="container player-container">
+            <div class="now-playing">
+                <div class="live-indicator"></div>
+                <div>
+                    <p style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--secondary);">Live Now</p>
+                    <p id="current-show" style="font-weight: 500;">Community Pulse</p>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="play-btn" id="master-play" onclick="togglePlayer()">
+                    <i class="fas fa-play" id="play-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="radio-stream" src="https://stream.zeno.fm/f97b6v4b4n0uv"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
