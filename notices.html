@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Notices | Makhado FM 107.3</title>
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="notices-page">
+
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.jpg" alt="Makhado FM Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="notices.html" class="active" style="color: var(--primary);">Notices</a></li>
+                    <li><a href="directory.html">Local Directory</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section class="section">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <h1 style="color: var(--primary); font-size: 3rem;">Community Notice Board</h1>
+                        <p>Your digital Kgotla for all important Makhado announcements.</p>
+                    </div>
+                    <a href="https://wa.me/27123456789?text=I%20would%20like%20to%20submit%20a%20funeral%20notice" class="btn btn-primary" style="background: var(--secondary);"><i class="fas fa-plus"></i> Submit a Notice</a>
+                </div>
+
+                <div class="contact-container" style="grid-template-columns: 2fr 1fr; gap: var(--space-lg);">
+                    <!-- Notices List -->
+                    <div class="notices-list">
+                        <h2 style="margin-bottom: 2rem; border-bottom: 2px solid var(--primary); display: inline-block;">Recent Announcements</h2>
+                        
+                        <div class="schedule-card" style="margin-bottom: 1.5rem; border-left: 5px solid #000;">
+                            <span class="time">FUNERAL NOTICE</span>
+                            <h3>Late Mr. Phineas Mukwevho</h3>
+                            <p>The Mukwevho family is saddened to announce the passing of Mr. Phineas Mukwevho. The funeral service will be held at the Reformed Church on Saturday at 07:00.</p>
+                        </div>
+
+                        <div class="schedule-card" style="margin-bottom: 1.5rem; border-left: 5px solid #d32f2f;">
+                            <span class="time">WATER ALERT</span>
+                            <h3>Maintenance in Eltivillas</h3>
+                            <p>Vhembe District Municipality announces emergency water maintenance in Eltivillas today. Water is expected to be restored by 18:00.</p>
+                        </div>
+
+                        <div class="schedule-card" style="margin-bottom: 1.5rem; border-left: 5px solid var(--accent);">
+                            <span class="time">SCHOOL NEWS</span>
+                            <h3>Makhado Primary Sports Day</h3>
+                            <p>Makhado Primary School invites all parents to the annual Sports Day this Friday from 08:00. Come support the children!</p>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar / Quick Submission -->
+                    <div class="notice-sidebar">
+                        <div class="glass-card" style="padding: var(--space-md); background: #f9f9f9; border: 1px solid #eee;">
+                            <h3>Need to share a notice?</h3>
+                            <p style="font-size: 0.9rem; margin: 1rem 0;">The fastest way to reach the community is through Makhado FM. Send your notice directly to our team via WhatsApp.</p>
+                            <a href="https://wa.me/27123456789?text=I%20would%20like%20to%20submit%20a%20notice" class="btn btn-primary" style="width: 100%;"><i class="fab fa-whatsapp"></i> One-Tap Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="assets/logo.jpg" alt="Makhado FM" style="height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+                    <p>Makhado FM 107.3 - Your station, your voice, your community.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
