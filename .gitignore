@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specifics
+implementation_plan.md
+walkthrough.md
+*.resolved
+*.resolved.*
+*.metadata.json

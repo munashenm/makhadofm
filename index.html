@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makhado FM 107.3 | The Heartbeat of our Community</title>
+    <meta name="description" content="Makhado FM 107.3 is a community radio station in Louis Trichardt, Limpopo, broadcasting in Venda, Tsonga, Sepedi, Afrikaans, and English.">
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="assets/logo.jpg" alt="Makhado FM Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#djs">Presenters</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1>The Heartbeat of <span style="color: var(--secondary);">Our Community</span></h1>
+                <p>Broadcasting live from the heart of Louis Trichardt on 107.3 FM. Join us for the best in music, news, and community stories.</p>
+                <div class="hero-btns">
+                    <a href="#schedule" class="btn btn-primary">View Schedule</a>
+                    <button class="btn btn-secondary" onclick="togglePlayer()"><i class="fas fa-play"></i> Listen Live</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="contact-container" style="align-items: center;">
+                    <div class="about-text">
+                        <h2 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 1rem;">Welcome to Makhado FM</h2>
+                        <p>Makhado FM 107.3 is more than just a radio station; it's a platform for our voices, our culture, and our community. Based in the vibrant town of Louis Trichardt, we serve the entire Makhado Local Municipality and beyond.</p>
+                        <p style="margin-top: 1rem;">We broadcast in a rich tapestry of languages, reflecting our diverse heritage: Venda, Tsonga, Sepedi, Afrikaans, and English. Our goal is to inform, entertain, and inspire every listener, from the youth to our elders.</p>
+                        <div style="margin-top: 2rem; display: flex; gap: 2rem;">
+                            <div class="stat">
+                                <h3 style="color: var(--secondary); font-size: 2rem;">107.3</h3>
+                                <p>FM Frequency</p>
+                            </div>
+                            <div class="stat">
+                                <h3 style="color: var(--secondary); font-size: 2rem;">5+</h3>
+                                <p>Languages</p>
+                            </div>
+                            <div class="stat">
+                                <h3 style="color: var(--secondary); font-size: 2rem;">24/7</h3>
+                                <p>Broadcasting</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img">
+                        <img src="assets/hero-bg.png" alt="Radio Studio" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-lg);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programming Schedule -->
+        <section id="schedule" class="section" style="background: #f0f0f0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="color: var(--primary); font-size: 2.5rem;">Our Programming</h2>
+                    <p>Stay tuned with your favorite shows throughout the week.</p>
+                </div>
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <span class="time">06:00 - 09:00</span>
+                        <h3>The Morning Rise</h3>
+                        <p>Start your day with the latest news, weather, and uplifting music.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="time">09:00 - 12:00</span>
+                        <h3>Community Pulse</h3>
+                        <p>Discussing local issues that matter to the people of Makhado.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="time">12:00 - 15:00</span>
+                        <h3>The Midday Groove</h3>
+                        <p>Keeping you company through the afternoon with great hits.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="time">15:00 - 18:00</span>
+                        <h3>Drive Time Live</h3>
+                        <p>Your ultimate companion on the road back home.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="time">18:00 - 21:00</span>
+                        <h3>Evening Reflections</h3>
+                        <p>Relaxing tunes and thoughtful conversations for your evening.</p>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="time">21:00 - 00:00</span>
+                        <h3>Night Owls Mix</h3>
+                        <p>The best late-night vibes to wind down your day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2 style="color: var(--primary);">Get in Touch</h2>
+                        <p>We'd love to hear from you! Send us your song requests, feedback, or business inquiries.</p>
+                        <ul style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-right: 10px;"></i> Louis Trichardt, Limpopo, SA</li>
+                            <li><i class="fas fa-phone" style="color: var(--secondary); margin-right: 10px;"></i> +27 87 012 5314</li>
+                            <li><i class="fas fa-envelope" style="color: var(--secondary); margin-right: 10px;"></i> info@makhadofm.co.za</li>
+                            <li><i class="fab fa-whatsapp" style="color: var(--secondary); margin-right: 10px;"></i> +27 12 345 6789</li>
+                        </ul>
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <a href="#" class="btn btn-primary" style="padding: 0.8rem 1rem;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-primary" style="padding: 0.8rem 1rem;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-primary" style="padding: 0.8rem 1rem;"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="text" placeholder="Subject">
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-secondary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="assets/logo.jpg" alt="Makhado FM" style="height: 50px; margin-bottom: 1rem; filter: brightness(0) invert(1);">
+                    <p>Your #1 community radio station in Limpopo. Connecting people, building futures.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="margin-top: 1rem; opacity: 0.8;">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Broadcast Area</h4>
+                    <ul style="margin-top: 1rem; opacity: 0.8;">
+                        <li>Louis Trichardt</li>
+                        <li>Makhado Municipality</li>
+                        <li>Vhembe District</li>
+                        <li>Online Worldwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Makhado FM 107.3. All rights reserved. Designed with ❤️ for the community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Player -->
+    <div class="sticky-player">
+        <div class="container player-container">
+            <div class="now-playing">
+                <div class="live-indicator"></div>
+                <div>
+                    <p style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--secondary);">Live Now</p>
+                    <p id="current-show" style="font-weight: 500;">Community Pulse</p>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="play-btn" id="master-play" onclick="togglePlayer()">
+                    <i class="fas fa-play" id="play-icon"></i>
+                </div>
+                <div class="volume-control" style="display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-volume-up"></i>
+                    <input type="range" min="0" max="100" value="80" style="width: 100px; cursor: pointer;">
+                </div>
+            </div>
+            <div class="listen-options">
+                <span style="font-size: 0.9rem; opacity: 0.8;">107.3 FM Stereo</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element (Placeholder Stream) -->
+    <audio id="radio-stream" src="https://stream.zeno.fm/f97b6v4b4n0uv"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
