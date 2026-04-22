@@ -78,6 +78,40 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCurrentShow();
     setInterval(updateCurrentShow, 60000); // Update every minute
 
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+
+    if (themeToggle) {
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            
+            if (isDark) {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+    }
+
+    // Shout-out System (Demo)
+    window.sendShoutout = () => {
+        const message = prompt("Enter your shout-out or song request:");
+        if (message) {
+            alert("Your message has been sent to the DJ! Keep listening.");
+        }
+    };
+
     // Smooth Scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -102,6 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             alert("Thank you for your message! Our team will get back to you shortly.");
             contactForm.reset();
+        });
+    }
+
+    // PWA Registration
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('Service Worker Registered'))
+                .catch(err => console.log('Service Worker Registration Failed', err));
         });
     }
 });

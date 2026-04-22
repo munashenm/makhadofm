@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makhado FM 107.3 | The Heartbeat of our Community</title>
     <meta name="description" content="Makhado FM 107.3 is a community radio station in Louis Trichardt, Limpopo, broadcasting in Venda, Tsonga, Sepedi, Afrikaans, and English.">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Makhado FM 107.3 | The Heartbeat of our Community">
+    <meta property="og:description" content="Listen live to the best music, news, and community stories from Louis Trichardt, Limpopo.">
+    <meta property="og:image" content="assets/logo.jpg">
+    <meta property="og:url" content="https://makhadofm.co.za">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for icons -->
@@ -26,6 +34,9 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
                 <div class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -42,9 +53,28 @@
                 <div class="hero-btns">
                     <a href="#schedule" class="btn btn-primary">View Schedule</a>
                     <button class="btn btn-secondary" onclick="togglePlayer()"><i class="fas fa-play"></i> Listen Live</button>
+                    <button class="btn btn-primary" onclick="sendShoutout()" style="background: var(--accent); margin-top: 1rem;"><i class="fas fa-comment-dots"></i> Send Shout-out</button>
                 </div>
             </div>
         </section>
+
+        <!-- Local Updates Bar -->
+        <div style="background: var(--primary-dark); color: white; padding: 1rem 0; border-bottom: 2px solid var(--secondary);">
+            <div class="container" style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-cloud-sun" style="color: var(--secondary);"></i>
+                    <span>Makhado: <strong>24°C Sunny</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-car" style="color: var(--accent);"></i>
+                    <span>N1 Traffic: <strong>Clear Flow</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-bullhorn" style="color: var(--secondary);"></i>
+                    <span>Community Alert: <strong>Water maintenance in CBD</strong></span>
+                </div>
+            </div>
+        </div>
 
         <!-- About Section -->
         <section id="about" class="section">
@@ -274,7 +304,8 @@
                     <input type="range" min="0" max="100" value="80" style="width: 100px; cursor: pointer;">
                 </div>
             </div>
-            <div class="listen-options">
+            <div class="listen-options" style="display: flex; align-items: center; gap: 1rem;">
+                <button class="btn btn-secondary" onclick="sendShoutout()" style="padding: 0.5rem 1rem; font-size: 0.8rem;"><i class="fas fa-comment-dots"></i> Shout-out</button>
                 <span style="font-size: 0.9rem; opacity: 0.8;">107.3 FM Stereo</span>
             </div>
         </div>
