@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -212,14 +212,18 @@
                 </div>
                 <div class="dj-grid">
                     <div class="dj-card">
-                        <img src="assets/dj1.png" alt="DJ" class="dj-img">
+                        <div class="dj-img-container">
+                            <img src="assets/dj1.png" alt="DJ" class="dj-img">
+                        </div>
                         <div class="dj-info">
                             <h3>DJ Max</h3>
                             <p>The Morning Rise</p>
                         </div>
                     </div>
                     <div class="dj-card">
-                        <img src="assets/dj2.png" alt="DJ" class="dj-img">
+                        <div class="dj-img-container">
+                            <img src="assets/dj2.png" alt="DJ" class="dj-img">
+                        </div>
                         <div class="dj-info">
                             <h3>Sarah V</h3>
                             <p>Midday Groove</p>
@@ -338,8 +342,11 @@
                 </div>
             </div>
             <div class="listen-options" style="display: flex; align-items: center; gap: 1rem;">
-                <button class="btn btn-secondary" onclick="sendShoutout()" style="padding: 0.5rem 1rem; font-size: 0.8rem;"><i class="fas fa-comment-dots"></i> Shout-out</button>
-                <span style="font-size: 0.9rem; opacity: 0.8;">107.3 FM Stereo</span>
+                <button class="btn btn-secondary" onclick="sendShoutout()" style="padding: 0.6rem 1.2rem; font-size: 0.85rem; border-radius: 12px;"><i class="fas fa-comment-dots"></i> Send Shout-out</button>
+                <div style="text-align: right;">
+                    <span style="font-size: 0.9rem; font-weight: 700; color: var(--secondary);">107.3 FM</span>
+                    <p style="font-size: 0.7rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px;">Louis Trichardt</p>
+                </div>
             </div>
         </div>
     </div>
