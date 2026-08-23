@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,11 +6,13 @@
     <title>News | Makhado FM 107.3</title>
     <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0"></script>
 
-        <header id="header" class="scrolled">
+    <header id="header" class="scrolled">
         <div class="container nav-container">
             <nav>
                 <div class="logo">
@@ -44,32 +46,70 @@
                     <p>The latest updates from Makhado FM and our community.</p>
                 </div>
 
-                <div class="news-grid">
-                    <div class="news-card">
-                        <img src="assets/news1.png" alt="News" class="news-img">
-                        <div class="news-content">
-                            <span class="date">April 23, 2026</span>
-                            <h3>New Community Outreach Program Launched</h3>
-                            <p>Makhado FM is proud to announce a new partnership with local schools to bring radio skills to the youth of Limpopo...</p>
-                            <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                <div class="news-layout">
+                    <!-- Social Sidebar (Now on the Left) -->
+                    <aside class="social-sidebar">
+                        <div style="background: var(--bg-card); padding: var(--space-md); border-radius: 12px; border: 1px solid #eee; position: sticky; top: 120px;">
+                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+                                <h2 style="color: var(--primary); font-size: 1.3rem;"><i class="fab fa-facebook"></i> Social Hub</h2>
+                                <span style="background: #e7f3ff; color: #1877f2; padding: 4px 10px; border-radius: 20px; font-size: 0.6rem; font-weight: 700; text-transform: uppercase;"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 5px; animation: blink 1s infinite;"></i> Social</span>
+                            </div>
+                            
+                            <div class="fb-page" 
+                                 data-href="https://www.facebook.com/MakhadofmRadio" 
+                                 data-tabs="timeline" 
+                                 data-width="" 
+                                 data-height="600" 
+                                 data-small-header="true" 
+                                 data-adapt-container-width="true" 
+                                 data-hide-cover="false" 
+                                 data-show-facepile="false">
+                                <blockquote cite="https://www.facebook.com/MakhadofmRadio" class="fb-xfbml-parse-ignore">
+                                    <div style="padding: 1.5rem; text-align: center; background: #fff; border: 1px dashed #ccc; border-radius: 8px;">
+                                        <p style="font-size: 0.9rem; color: var(--text-muted);">The Facebook feed is currently set to private.</p>
+                                        <a href="https://www.facebook.com/MakhadofmRadio" target="_blank" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.8rem; padding: 0.5rem 1rem;">Open Facebook</a>
+                                        <p style="font-size: 0.7rem; color: #999; margin-top: 1rem;">Admin: Please set Page Age/Country restrictions to "Public" to show feed here.</p>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            
+                            <div style="margin-top: 2rem; border-top: 1px solid #eee; padding-top: 1.5rem;">
+                                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.1rem;"><i class="fab fa-whatsapp"></i> WhatsApp Us</h3>
+                                <a href="https://wa.me/27791741830" class="btn btn-secondary" style="width: 100%; border-radius: 8px; padding: 0.7rem; font-size: 0.9rem;" target="_blank"><i class="fab fa-whatsapp"></i> Send Message</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="news-card">
-                        <img src="assets/hero-bg.png" alt="News" class="news-img">
-                        <div class="news-content">
-                            <span class="date">April 20, 2026</span>
-                            <h3>Top 10 Local Hits of the Week</h3>
-                            <p>Our listeners have spoken! Here are the tracks that dominated the airwaves this week in the Vhembe district...</p>
-                            <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
-                        </div>
-                    </div>
-                    <div class="news-card">
-                        <img src="assets/gallery1.png" alt="News" class="news-img">
-                        <div class="news-content">
-                            <span class="date">April 15, 2026</span>
-                            <h3>Upcoming Live Broadcast: Makhado Expo</h3>
-                            <p>Join us live from the Makhado Expo this weekend for interviews, prizes, and the best music...</p>
-                            <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                    </aside>
+
+                    <!-- News Main (Now in the Center/Right) -->
+                    <div class="news-main">
+                        <div class="news-grid">
+                            <div class="news-card">
+                                <img src="assets/news1.png" alt="News" class="news-img">
+                                <div class="news-content">
+                                    <span class="date">April 23, 2026</span>
+                                    <h3>New Community Outreach Program Launched</h3>
+                                    <p>Makhado FM is proud to announce a new partnership with local schools to bring radio skills to the youth of Limpopo...</p>
+                                    <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <img src="assets/hero-bg.png" alt="News" class="news-img">
+                                <div class="news-content">
+                                    <span class="date">April 20, 2026</span>
+                                    <h3>Top 10 Local Hits of the Week</h3>
+                                    <p>Our listeners have spoken! Here are the tracks that dominated the airwaves this week in the Vhembe district...</p>
+                                    <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <img src="assets/gallery1.png" alt="News" class="news-img">
+                                <div class="news-content">
+                                    <span class="date">April 15, 2026</span>
+                                    <h3>Upcoming Live Broadcast: Makhado Expo</h3>
+                                    <p>Join us live from the Makhado Expo this weekend for interviews, prizes, and the best music...</p>
+                                    <a href="#" class="btn btn-primary" style="margin-top: 1rem; padding: 0.5rem 1rem;">Read Full Story</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,10 +145,25 @@
                         <li><i class="fab fa-whatsapp"></i> +27 79 174 1830</li>
                     </ul>
                     <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/MakhadofmRadio?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/Makhadofm1" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/explore/locations/1019612818/makhado-fm-1073/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@makhado.fm" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
+                </div>
+            </div>
+            <div class="footer-partners">
+                <p class="footer-partners-label">Our Partners</p>
+                <div class="footer-partners-logos">
+                    <a href="https://www.urbanfocus.co.za" target="_blank" rel="noopener noreferrer" title="Urban Focus">
+                        <img src="assets/partner-urbanfocus.jpg" alt="Urban Focus">
+                    </a>
+                    <a href="https://www.cyberdevelopers.co.za" target="_blank" rel="noopener noreferrer" title="Cyber Developers">
+                        <img src="assets/partner-cyberdevelopers.jpg" alt="Cyber Developers">
+                    </a>
+                    <a href="https://www.itguysa.co.za" target="_blank" rel="noopener noreferrer" title="IT Guy SA">
+                        <img src="assets/partner-itguysa.png" alt="IT Guy SA">
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -139,4 +194,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
